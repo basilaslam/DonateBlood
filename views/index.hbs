@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- IconScout -->
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- ===== Bootstrap-CSS ===== -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="/stylesheets/index.css">
+
+        <title>Menu responsive</title>
+    </head>
+    <body>
+
+        {{!-- Navbar --}}
+
+
+        <header class="header">
+         
+            <a href="#" class="header__logo"><img src="/images/Logo.svg" alt="">  Donate Blood</a>
+          
+            <img src="/images/hamburger.png" name="menu-outline" class="header__toggle" id="nav-toggle" alt="menu">
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="/images/Logo.svg" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="nav__name">Donate Blood</a>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#main" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#footer" class="nav__link">Contact us</a></li>
+                            <li class="nav__item nav-login"><a href="/login" class="nav__link">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        {{!-- Main --}}
+
+        <main id="main">
+                <div class="main__wrapper " >
+                    <div class="top">
+                        <img src="/images/Main-1.svg" alt="" class="main__1">
+                    </div>
+                    <div class="left">
+                        <h1>Save Lives</h1>
+                        <p>“Bring a life back to power. Make blood donation your responsibility”</p>
+                        <a href="/signup"><button class="cta">Register</button></a>
+                    </div>
+                    <div class="right">
+                        <img src="/images/Main-1.svg" alt="" class="main__1">
+                    </div>
+                </div>
+                <section class="services" id="services">
+
+                    <h1 class="sub__heading section__heading">Services</h1>
+                    
+                    <div class="service__wrapper">
+           
+
+                        <div class="left">
+                            <p class="para">We Will Help You To Connect To Blood Doners</p>
+                            
+                            <p class="para">“Never feel yourself weak, you have the ability to save a life. Just donate blood.”</p>
+                        </div>
+                        <div class="right">
+                            <div class="service__icon"> <i class="uil uil-user-location"></i></div>
+                           <div class="service__icon"><i class="uil uil-phone-volume"></i></div>
+                           <div class="service__icon"><i class="uil uil-tear"></i></div> 
+                            <div class="service__icon"><i class="uil uil-search"></i></div>
+                        </div>
+
+                    </div>
+
+                    <div class="sub__services_wrapper">
+
+                    <div class="sub__services">
+                        <div class="top">
+                            <div class="service__icon"><i class="uil uil-user-location"></i></div>
+                            <h1 class="sub__heading">Location</h1>
+                        </div>
+                        <div class="bottom">
+                            <p class="para">Location Of Blood Donor Of Your Blood Group</p>
+                        </div>
+                    </div>
+
+                    <div class="sub__services">
+                        <div class="top">
+                            <div class="service__icon contact__icon"><i class="uil uil-phone-volume"></i></div>
+                            <h1 class="sub__heading">Contact Details Of Blood Donor</h1>
+                        </div>
+                        <div class="bottom">
+                            <p class="para">Location Of Blood Donor Of Your Blood Group</p>
+                        </div>
+                    </div>
+
+                    <div class="sub__services">
+                        <div class="top">
+                            <div class="service__icon"><i class="uil uil-tear"></i></div>
+                            <h1 class="sub__heading">Blood Group</h1>
+                        </div>
+                        <div class="bottom">
+                            <p class="para">Location Of Blood Donor Of Your Blood Group</p>
+                        </div>
+                    </div>
+
+                    <div class="sub__services">
+                        <div class="top">
+                            <div class="service__icon"><i class="uil uil-search"></i></div>
+                            <h1 class="sub__heading">Search</h1>
+                        </div>
+                        <div class="bottom">
+                            <p class="para">Search Through Donors</p>
+                        </div>
+                    </div>
+                            </div>
+
+                </section>
+
+                <section class="about" id="about">
+                    <div class="about__wrapper">
+                        <h1 class="sub__heading section__heading">About</h1>
+                        <p class="para about__para" id="about__text " onclick=changeId()>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius autem odit placeat. Perferendis quaerat ab eligendi architecto, fugiat expedita rerum alias! Eos dolorem minima placeat, molestiae officia, pariatur quae, ipsam veritatis dicta id nesciunt possimus quis enim facilis corrupti aliquid voluptatem similique? Voluptate dolores voluptatum facilis id molestiae, exercitationem harum? Cupiditate quam error ipsam assumenda provident modi, placeat reprehenderit beatae earum dolorum hic tempora tenetur maiores, mollitia aliquam laborum consequatur iure ipsa. Inventore magnam distinctio corporis! Error rem excepturi magnam est ullam corporis nihil aut nesciunt exercitationem repellendus veritatis velit totam, reprehenderit voluptate sed eum dignissimos natus! Consectetur praesentium tenetur doloremque cumque vitae excepturi quis, quaerat asperiores odit placeat assumenda laboriosam nobis quod eaque nostrum maxime quia veritatis illum at aliquid eos. Quis non repellendus in ducimus distinctio error quo, officiis molestiae nam voluptas necessitatibus eveniet reiciendis itaque assumenda laboriosam expedita, deleniti illum! Voluptate ex quibusdam natus. Eum, molestiae dolor?</p>
+                    </div>
+                </section>
+                
+        </main>
+        
+        <footer id="footer">
+                <img class="footer__image" src="/images/Logo.svg" alt="">
+
+            <div class="footer__wrapper">
+               
+                            <div class="left"> <h1>Contact Us</h1>
+                            <p class="footer__content" t>donateblood@gmail.com</p>
+                            <p class="footer__content">+91 944 600 1964</p>
+
+                             </div>
+                             <div class="right">
+                                 <p class="footer__content">instagram.com/donateblood</p>
+                                 <p class="footer__content">github.com/donateblood</p>
+                                 <p class="footer__content">twitter.com/donateblood</p>
+                             </div>
+                             </div>
+                        <p class="cp-text">© Copyright 2015 Company Name. All rights reserved.</p>
+
+                </footer>
+
+        <!-- ===== Jquery ===== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!--===== Bootstrap JS =====-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="/javascripts/navbar.js"></script>
+        <script src="/javascripts/truncateText.js"></script>
+    </body>
+</html>
