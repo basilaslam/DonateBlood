@@ -22,4 +22,15 @@
 	});
     
 
-})(jQuery);
+		})(jQuery);
+
+function showCampaign(){
+	$('.cmpgn').addClass('campaign')
+	$('.rmcampaign').attr('onclick','removeCampaign()')
+}
+
+function removeCampaign(){
+	console.log('hello');
+	$('.cmpgn').removeClass('campaign')
+	$('.rmcampaign').attr('onclick','showCampaign()')
+}

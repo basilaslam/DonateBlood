@@ -164,6 +164,79 @@ iframe {
 
 
 /*////////////////////////////////////////////////////////////////////
+[Campaign]*/
+section.campaign__wrapper{
+	margin:0;
+	padding:0;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	
+	}
+
+.cmpgn{
+  display: none;
+}
+
+.campaign{
+  display: block;
+  z-index: 2;
+	height:500px;
+	background-color:#fff;
+	width:20%;
+	position:absolute;
+	right:0;
+	overflow-y: auto;
+	border: 4px solid #3A2B2B;
+	border-top:none;
+}
+
+
+.campaign-banner{
+	align-items: center;
+	text-align:center;
+	
+}
+section .campaign hr{
+	height:5px;
+	color:gray;
+	}
+
+.campaign-banner img{
+	height:300px;
+	width:90%;
+  padding: 0 5rem;
+	
+}
+section .campaign .campaign-detailes{
+	padding:5px;
+	width:98%;
+}
+
+section .campaign .campaign-detailes p span:nth-child(1){
+  width: 140px;
+  float: left; 
+	font-weight:600;
+  padding-right: 10px;
+  display: block;
+  position: relative;
+font-size:14px;
+}
+section .campaign .campaign-detailes p span:nth-child(1):after{
+content: ":";
+position: absolute;
+right: 0;
+top: 0;
+}
+
+section .campaign .campaign-detailes p span:nth-child(2),section .campaign .campaign-detailes p div{
+  word-wrap: break-word;
+  padding-left: 20px;
+		font-size : 0.7rem;
+	font-weight:400;
+}
+
+/*////////////////////////////////////////////////////////////////////
 [Filter]*/
 .container {
 	display: flex;

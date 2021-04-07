@@ -136,6 +136,7 @@ router.get('/logout',(req,res)=>{
 
 // Filter{
 router.post('/home/filter/',(req,res)=>{
+  console.log(req.body);
 
    
 

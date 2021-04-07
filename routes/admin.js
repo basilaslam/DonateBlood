@@ -30,4 +30,36 @@ router.get('/delete-user/',(req,res)=>{
     
 })
 
+
+router.get("/campaign", (req, res) => {
+
+    res.render("admin/adminCampaign");
+
+});
+// Filter 
+
+router.post('/admin/home/adminFilter/',(req,res)=>{
+
+   
+
+  if(req.body.name == '' && req.body.blood == '' && req.body.country == '' && req.body.state == '' && req.body.distric == ''){
+
+   console.log(req.body)
+     res.redirect('/admin/home')
+     console.log('1');
+
+
+ }else{
+   console.log(req.body)
+
+detailHelpers.filteredDetailes(req.body).then((filterdUsers)=>{
+ 
+ res.render('admin/adminHome', {allUsers:filterdUsers})
+
+})
+
+}
+ 
+})
+
 module.exports = router;
